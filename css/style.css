@@ -1,0 +1,82 @@
+/* Project Hacks */
+
+/* BOX MODEL HACK */
+* {
+    -moz-box-sizing: border-box; /* Firexfox */
+    -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box; /* IE */
+}
+
+/* clear fix */
+.clear:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+/* General Styles */
+
+body {
+   font-family: 'Outfit';
+   font-size: 25px;
+   line-height: 1.6;
+   background-color: #DCE8F2; 
+}
+
+
+#container {
+    width: 375px;
+    margin: auto;
+    position: relative;
+    top: 3em;
+    background-color: white;
+    box-shadow: 10px 10px 18px #d0d0d0;
+    border-radius: 25px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+div#container:hover{
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    background-color:#f0f3f9;
+    border-color:#FFFFFF;
+}
+/* details in container */
+    aside {
+        position: relative;
+        top: 15px;
+    }
+        img {
+            width: 90%;
+            border-radius: 5%;
+            margin-top: auto;
+            margin-bottom: 10px;
+     }
+    section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+        #para {
+            margin: 0px 10px 0px 10px;
+            padding: 0px 20px 0px 20px;
+            position: relative;
+            line-height: 1.2;
+     }
+        #para > #title {
+            font-weight: bolder;
+            color: #1F2D40;
+    }
+        #para > #subtitle {
+            font-size: 70%;
+            color: #7f8080;
+        }
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+}
